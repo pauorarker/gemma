@@ -43,7 +43,7 @@
 }
 
 /* Estilo para los botones de los lados (CAM GIRL AU y FAN FIC) */
-.btn {
+.btn:not(.destacado) {
     background-color: black;
     color: white;
     padding: 8px 16px;
@@ -56,7 +56,7 @@
 }
 
 /* Efecto al pasar el mouse sobre los botones pequeños */
-.btn {
+.btn:not(.destacado):hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
