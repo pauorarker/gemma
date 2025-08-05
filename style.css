@@ -33,7 +33,7 @@
   z-index: 1;
   text-align: center;
 }
-.about-page .btn {
+.about-page ..button-row {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
