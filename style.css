@@ -33,44 +33,52 @@
   z-index: 1;
   text-align: center;
 }
-/* Estilo general para todos los botones */
-.about-page .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 10px;
-    background-color: #6e1f2a;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+/* Estilos para el contenedor de los botones */
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-/* Efecto al pasar el mouse por encima de los botones */
-.about-page .btn:hover {
-    background-color: #a02c3b;
-}
-
-/* Estilo para los botones de los lados (los que no tienen la clase 'destacado') */
-.about-page .btn:not(.destacado) {
+/* Estilo para los botones de los lados (CAM GIRL AU y FAN FIC) */
+.btn:not(.destacado) {
     background-color: black;
     color: white;
     padding: 8px 16px;
     font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
 }
 
-/* Estilo específico para el botón central ('BEST GIRL') */
-.about-page .btn.destacado {
+/* Efecto al pasar el mouse sobre los botones pequeños */
+.btn:not(.destacado):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo específico y destacado para BEST GIRL */
+.btn.destacado {
     background-color: #6e1f2a;
     color: white;
     padding: 15px 30px;
     font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
 }
 
-/* Efecto hover para el botón destacado */
-.about-page .btn.destacado:hover {
+/* Efecto al pasar el mouse sobre el botón BEST GIRL */
+.btn.destacado:hover {
     background-color: #8c2637;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(110, 31, 42, 0.4);
 }
 .spotify-player {
   margin: 30px auto;
